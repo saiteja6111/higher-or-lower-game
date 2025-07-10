@@ -1,11 +1,8 @@
 import game_data
 import random
+import diagram
 
-print('''▗▖ ▗▖▗▄▄▄▖ ▗▄▄▖▗▖ ▗▖▗▄▄▄▖▗▄▄▖      ▗▄▖ ▗▄▄▖     ▗▖    ▗▄▖ ▗▖ ▗▖▗▄▄▄▖▗▄▄▖      ▗▄▄▖ ▗▄▖ ▗▖  ▗▖▗▄▄▄▖
-▐▌ ▐▌  █  ▐▌   ▐▌ ▐▌▐▌   ▐▌ ▐▌    ▐▌ ▐▌▐▌ ▐▌    ▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌   ▐▌ ▐▌    ▐▌   ▐▌ ▐▌▐▛▚▞▜▌▐▌   
-▐▛▀▜▌  █  ▐▌▝▜▌▐▛▀▜▌▐▛▀▀▘▐▛▀▚▖    ▐▌ ▐▌▐▛▀▚▖    ▐▌   ▐▌ ▐▌▐▌ ▐▌▐▛▀▀▘▐▛▀▚▖    ▐▌▝▜▌▐▛▀▜▌▐▌  ▐▌▐▛▀▀▘
-▐▌ ▐▌▗▄█▄▖▝▚▄▞▘▐▌ ▐▌▐▙▄▄▖▐▌ ▐▌    ▝▚▄▞▘▐▌ ▐▌    ▐▙▄▄▖▝▚▄▞▘▐▙█▟▌▐▙▄▄▖▐▌ ▐▌    ▝▚▄▞▘▐▌ ▐▌▐▌  ▐▌▐▙▄▄▖
-                                                                                                  ''')
+print(diagram.title_logo)
 
 def random1():
     global random_value1
@@ -27,10 +24,7 @@ while start:
     b = f"{game_data.data[random_value2]['name']}, a {game_data.data[random_value2]['description']}, from {game_data.data[random_value2]['country']}."
 
     print(a+"\n")
-    print('''▗▖  ▗▖ ▗▄▄▖
-▐▌  ▐▌▐▌   
-▐▌  ▐▌ ▝▀▚▖
- ▝▚▞▘ ▗▄▄▞▘\n''')
+    print(diagram.vs+"\n")
     print(b+"\n")
     choice = input("Who has more followers? Type 'A' or 'B': ")
     if choice.lower() == 'a':
@@ -51,7 +45,7 @@ while start:
         elif game_data.data[random_value2]['follower_count'] < game_data.data[random_value1]['follower_count']:
             print(f"Sorry, that's wrong. Final score: {count}")
             break
-    
+
     
 
 
