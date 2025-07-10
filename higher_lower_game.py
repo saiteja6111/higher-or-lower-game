@@ -1,7 +1,11 @@
 import game_data
 import random
 
-
+print('''▗▖ ▗▖▗▄▄▄▖ ▗▄▄▖▗▖ ▗▖▗▄▄▄▖▗▄▄▖      ▗▄▖ ▗▄▄▖     ▗▖    ▗▄▖ ▗▖ ▗▖▗▄▄▄▖▗▄▄▖      ▗▄▄▖ ▗▄▖ ▗▖  ▗▖▗▄▄▄▖
+▐▌ ▐▌  █  ▐▌   ▐▌ ▐▌▐▌   ▐▌ ▐▌    ▐▌ ▐▌▐▌ ▐▌    ▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌   ▐▌ ▐▌    ▐▌   ▐▌ ▐▌▐▛▚▞▜▌▐▌   
+▐▛▀▜▌  █  ▐▌▝▜▌▐▛▀▜▌▐▛▀▀▘▐▛▀▚▖    ▐▌ ▐▌▐▛▀▚▖    ▐▌   ▐▌ ▐▌▐▌ ▐▌▐▛▀▀▘▐▛▀▚▖    ▐▌▝▜▌▐▛▀▜▌▐▌  ▐▌▐▛▀▀▘
+▐▌ ▐▌▗▄█▄▖▝▚▄▞▘▐▌ ▐▌▐▙▄▄▖▐▌ ▐▌    ▝▚▄▞▘▐▌ ▐▌    ▐▙▄▄▖▝▚▄▞▘▐▙█▟▌▐▙▄▄▖▐▌ ▐▌    ▝▚▄▞▘▐▌ ▐▌▐▌  ▐▌▐▙▄▄▖
+                                                                                                  ''')
 
 def random1():
     global random_value1
@@ -23,7 +27,10 @@ while start:
     b = f"{game_data.data[random_value2]['name']}, a {game_data.data[random_value2]['description']}, from {game_data.data[random_value2]['country']}."
 
     print(a+"\n")
-    print("VS\n")
+    print('''▗▖  ▗▖ ▗▄▄▖
+▐▌  ▐▌▐▌   
+▐▌  ▐▌ ▝▀▚▖
+ ▝▚▞▘ ▗▄▄▞▘\n''')
     print(b+"\n")
     choice = input("Who has more followers? Type 'A' or 'B': ")
     if choice.lower() == 'a':
